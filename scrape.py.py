@@ -4,6 +4,9 @@ from urllib.parse import urlparse, urljoin
 from bs4 import BeautifulSoup as bs 
 
 
+# This file takes a bit of time to run and some error might be thrown which are intentional
+# We have explicitly done error management and will let the user know which url threw the error.
+
 def getlinks(url: str):
     internal_links = set()
     external_links = set()
